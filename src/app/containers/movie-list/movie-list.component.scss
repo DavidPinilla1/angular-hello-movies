@@ -1,17 +1,18 @@
+@import 'src/colors.scss';
 .movies {
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
-    background-color: rgb(153, 235, 255);
+    background-color: $solid;
     gap: 0.8em;
     padding: 1em;
     .movie {
         padding: 0.5em;
         border-radius: 0.8em;
-        background-color: rgb(196, 243, 255);
+        background-color: $light;
         transition: 0.8s all;
         cursor: pointer;
         &:hover {
-            background-color: rgb(0, 148, 185);
+            background-color: $dark;
         }
         img {
             width: 100%;
