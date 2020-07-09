@@ -1,2 +1,7 @@
-<p>movie-list works!</p>
-{{title}}
+<!-- {{movies | json}} -->
+<div class="movies">
+    <div class="movie" *ngFor="let movie of movies">
+        <h5>{{movie.title | uppercase}}</h5>
+        <img src="http://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="imagen de {{movie.title}}"> {{movie.release_date | date:'EEEE, MMMM d, y'}}
+    </div>
+</div>
